@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Terrain Generator</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div id="biomeContainer" class="biome-info"></div>
+            <canvas id="terrainCanvas" width="800" height="600"></canvas>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="scaleInput">Scale: </label>
+                    <input type="text" id="scaleInput" value="0.1" />
+                    <span id="scaleValue">0.1</span>
+                </div>
+                <div class="control-group">
+                    <label for="biasInput">Bias: </label>
+                    <input type="text" id="biasInput" value="0.1" />
+                    <span id="biasValue">0.1</span>
+                </div>
+                <div class="control-group">
+                    <label for="temperatureInput">Temperature: </label>
+                    <input type="text" id="temperatureInput" value="0.022" />
+                    <span id="temperatureValue">0.022</span>
+                </div>
+                <div class="control-group">
+                    <label for="humidityInput">Humidity: </label>
+                    <input type="text" id="humidityInput" value="0.021" />
+                    <span id="humidityValue">0.021</span>
+                </div>
+                <div class="control-group">
+                    <label for="elevationInput">Elevation: </label>
+                    <input type="text" id="elevationInput" value="1.1" />
+                    <span id="elevationValue">1.1   </span>
+                </div>
+                <div class="control-group">
+                    <label for="seedInput">Seed:</label>
+                    <input type="text" id="seedInput" value="" />
+                    <button id="randomSeedButton">Random Seed</button>
+                </div>
+            </div>
+        </div>
+        <script src="perlin.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
